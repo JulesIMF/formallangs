@@ -49,7 +49,6 @@ parser.add_argument("-s",
                     help="Save dot file; auto-deleted after png compilation by default")
 
 args = parser.parse_args()
-print(args)
 
 with open(args.input) as src, open(f"{args.output}.dot", 'w') as dst:
     print("digraph\n{\nrankdir=\"LR\";", file=dst)
