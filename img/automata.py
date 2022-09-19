@@ -22,7 +22,7 @@
 #
 
 import argparse
-from os import system
+from os import remove, system
 
 def statename(state: int) -> str:
     return "state" + str(state)
@@ -43,7 +43,13 @@ parser.add_argument("-i",
                     type=str, 
                     help="Input file name (WITH extnsion, like automata.txt); \"automata.txt\" by default")
 
+parser.add_argument("-s", 
+                    dest="savedot",
+                    action="store_true",
+                    help="Save dot file; auto-deleted after png compilation by default")
+
 args = parser.parse_args()
+print(args)
 
 with open(args.input) as src, open(f"{args.output}.dot", 'w') as dst:
     print("digraph\n{\nrankdir=\"LR\";", file=dst)
@@ -133,3 +139,5 @@ with open(args.input) as src, open(f"{args.output}.dot", 'w') as dst:
     print("}", file=dst)
 
 system(f"dot -Tpng \"{args.output}.dot\" -o \"{args.output}.png\" > /dev/null")
+if not args.savedot:
+    remove(f"{args.output}.dot")
