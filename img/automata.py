@@ -14,18 +14,38 @@
 #              перечисления стрелок и начало перечисления завершающих состояний
 #           6) Перечислите завершающие состояния
 #           7) Начальное состояние -- это наименьшее как число
+#           8) Можно менять имена выходных и входных файлов, см. $ python3 automata.py -h
 #           8) По вопросам и предложениям писать https://vk.com/jules_imf
 #
 #   Автор:
 #	    JulesIMF
 #
 
+import argparse
 from os import system
 
 def statename(state: int) -> str:
     return "state" + str(state)
 
-with open("automata.txt") as src, open("automata.dot", 'w') as dst:
+parser = argparse.ArgumentParser(description="Generates dot-file for automatons.")
+
+parser.add_argument("-o", 
+                    dest="output", 
+                    nargs="?", 
+                    default="automata", 
+                    type=str, 
+                    help="Output file name (without .dot or .png); \"automata\" by default")
+
+parser.add_argument("-i", 
+                    dest="input", 
+                    nargs="?", 
+                    default="automata.txt", 
+                    type=str, 
+                    help="Input file name (WITH extnsion, like automata.txt); \"automata.txt\" by default")
+
+args = parser.parse_args()
+
+with open(args.input) as src, open(f"{args.output}.dot", 'w') as dst:
     print("digraph\n{\nrankdir=\"LR\";", file=dst)
     arrows=[]
     normal_states=set()
@@ -112,4 +132,4 @@ with open("automata.txt") as src, open("automata.dot", 'w') as dst:
     print(f"nowhere->{statename(starting_state)};", file=dst)
     print("}", file=dst)
 
-system("dot -Tpng automata.dot -o automata.png > /dev/null")
+system(f"dot -Tpng \"{args.output}.dot\" -o \"{args.output}.png\" > /dev/null")
