@@ -1,0 +1,1 @@
+/usr/bin/clang++  -O0    -g -fprofile-instr-generate -fcoverage-mapping   CMakeFiles/regsolver.dir/src/Main.cpp.o CMakeFiles/regsolver.dir/src/Automaton.cpp.o CMakeFiles/regsolver.dir/src/Regexp.cpp.o CMakeFiles/regsolver.dir/src/Optimize.cpp.o CMakeFiles/regsolver.dir/src/Task.cpp.o  -o bin/regsolver 
