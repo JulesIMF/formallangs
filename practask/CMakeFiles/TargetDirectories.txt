@@ -1,0 +1,4 @@
+/home/julesimf/source/MIPT/formallangs/practask/CMakeFiles/rebuild_cache.dir
+/home/julesimf/source/MIPT/formallangs/practask/CMakeFiles/edit_cache.dir
+/home/julesimf/source/MIPT/formallangs/practask/CMakeFiles/test.dir
+/home/julesimf/source/MIPT/formallangs/practask/CMakeFiles/regsolver.dir

@@ -1,0 +1,56 @@
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/julesimf/source/MIPT/formallangs/practask/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_16f7a/fast && /usr/bin/make -f CMakeFiles/cmTC_16f7a.dir/build.make CMakeFiles/cmTC_16f7a.dir/build
+make[1]: Entering directory '/home/julesimf/source/MIPT/formallangs/practask/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_16f7a.dir/src.cxx.o
+/usr/bin/c++    -O0 -Wno-multichar -Wno-unused-result -Wno-narrowing -fsanitize=address  -g -DCMAKE_HAVE_LIBC_PTHREAD   -std=gnu++17 -o CMakeFiles/cmTC_16f7a.dir/src.cxx.o -c /home/julesimf/source/MIPT/formallangs/practask/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_16f7a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16f7a.dir/link.txt --verbose=1
+/usr/bin/c++  -O0 -Wno-multichar -Wno-unused-result -Wno-narrowing -fsanitize=address  -g -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_16f7a.dir/src.cxx.o  -o cmTC_16f7a 
+/usr/bin/ld: CMakeFiles/cmTC_16f7a.dir/src.cxx.o: undefined reference to symbol 'pthread_detach@@GLIBC_2.2.5'
+/usr/bin/ld: /lib/x86_64-linux-gnu/libpthread.so.0: error adding symbols: DSO missing from command line
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_16f7a.dir/build.make:87: cmTC_16f7a] Error 1
+make[1]: Leaving directory '/home/julesimf/source/MIPT/formallangs/practask/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_16f7a/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/julesimf/source/MIPT/formallangs/practask/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ca033/fast && /usr/bin/make -f CMakeFiles/cmTC_ca033.dir/build.make CMakeFiles/cmTC_ca033.dir/build
+make[1]: Entering directory '/home/julesimf/source/MIPT/formallangs/practask/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ca033.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -O0 -Wno-multichar -Wno-unused-result -Wno-narrowing -fsanitize=address  -g -DCHECK_FUNCTION_EXISTS=pthread_create   -std=gnu++17 -o CMakeFiles/cmTC_ca033.dir/CheckFunctionExists.cxx.o -c /home/julesimf/source/MIPT/formallangs/practask/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_ca033
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca033.dir/link.txt --verbose=1
+/usr/bin/c++  -O0 -Wno-multichar -Wno-unused-result -Wno-narrowing -fsanitize=address  -g -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_ca033.dir/CheckFunctionExists.cxx.o  -o cmTC_ca033  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_ca033.dir/build.make:87: cmTC_ca033] Error 1
+make[1]: Leaving directory '/home/julesimf/source/MIPT/formallangs/practask/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ca033/fast] Error 2
+
+
+
