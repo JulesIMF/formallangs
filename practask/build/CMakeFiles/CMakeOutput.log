@@ -15,15 +15,15 @@ The CXX compiler identification is Clang, found in "/home/julesimf/source/MIPT/f
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/julesimf/source/MIPT/formallangs/practask/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_d8c87 && [1/2] Building CXX object CMakeFiles/cmTC_d8c87.dir/testCXXCompiler.cxx.o
-[2/2] Linking CXX executable cmTC_d8c87
+Run Build Command(s):/usr/bin/ninja cmTC_06d78 && [1/2] Building CXX object CMakeFiles/cmTC_06d78.dir/testCXXCompiler.cxx.o
+[2/2] Linking CXX executable cmTC_06d78
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/julesimf/source/MIPT/formallangs/practask/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_0d5e4 && [1/2] Building CXX object CMakeFiles/cmTC_0d5e4.dir/CMakeCXXCompilerABI.cpp.o
+Run Build Command(s):/usr/bin/ninja cmTC_50781 && [1/2] Building CXX object CMakeFiles/cmTC_50781.dir/CMakeCXXCompilerABI.cpp.o
 Ubuntu clang version 12.0.0-3ubuntu1~20.04.4
 Target: x86_64-pc-linux-gnu
 Thread model: posix
@@ -38,7 +38,7 @@ Selected GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/10
 Candidate multilib: .;@m64
 Selected multilib: .;@m64
  (in-process)
- "/usr/lib/llvm-12/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/lib/llvm-12/lib/clang/12.0.0 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-12/lib/clang/12.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /home/julesimf/source/MIPT/formallangs/practask/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -o CMakeFiles/cmTC_0d5e4.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
+ "/usr/lib/llvm-12/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/lib/llvm-12/lib/clang/12.0.0 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-12/lib/clang/12.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /home/julesimf/source/MIPT/formallangs/practask/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -o CMakeFiles/cmTC_50781.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
 clang -cc1 version 12.0.0 based upon LLVM 12.0.0 default target x86_64-pc-linux-gnu
 ignoring nonexistent directory "/include"
 ignoring duplicate directory "/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10"
@@ -52,7 +52,7 @@ ignoring duplicate directory "/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../in
  /usr/include/x86_64-linux-gnu
  /usr/include
 End of search list.
-[2/2] Linking CXX executable cmTC_0d5e4
+[2/2] Linking CXX executable cmTC_50781
 Ubuntu clang version 12.0.0-3ubuntu1~20.04.4
 Target: x86_64-pc-linux-gnu
 Thread model: posix
@@ -66,7 +66,7 @@ Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/9
 Selected GCC installation: /bin/../lib/gcc/x86_64-linux-gnu/10
 Candidate multilib: .;@m64
 Selected multilib: .;@m64
- "/bin/ld" --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0d5e4 /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /bin/../lib/gcc/x86_64-linux-gnu/10/crtbegin.o -L/bin/../lib/gcc/x86_64-linux-gnu/10 -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/x86_64-linux-gnu/../../lib64 -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../.. -L/usr/lib/llvm-12/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_0d5e4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /bin/../lib/gcc/x86_64-linux-gnu/10/crtend.o /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
+ "/bin/ld" --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_50781 /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /bin/../lib/gcc/x86_64-linux-gnu/10/crtbegin.o -L/bin/../lib/gcc/x86_64-linux-gnu/10 -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/x86_64-linux-gnu/../../lib64 -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../.. -L/usr/lib/llvm-12/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_50781.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /bin/../lib/gcc/x86_64-linux-gnu/10/crtend.o /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
 
 
 
@@ -95,7 +95,7 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/julesimf/source/MIPT/formallangs/practask/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/ninja cmTC_0d5e4 && [1/2] Building CXX object CMakeFiles/cmTC_0d5e4.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [Run Build Command(s):/usr/bin/ninja cmTC_50781 && [1/2] Building CXX object CMakeFiles/cmTC_50781.dir/CMakeCXXCompilerABI.cpp.o]
   ignore line: [Ubuntu clang version 12.0.0-3ubuntu1~20.04.4]
   ignore line: [Target: x86_64-pc-linux-gnu]
   ignore line: [Thread model: posix]
@@ -112,7 +112,7 @@ Parsed CXX implicit link information from above output:
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
   ignore line: [ (in-process)]
-  ignore line: [ "/usr/lib/llvm-12/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/lib/llvm-12/lib/clang/12.0.0 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-12/lib/clang/12.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /home/julesimf/source/MIPT/formallangs/practask/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -o CMakeFiles/cmTC_0d5e4.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [ "/usr/lib/llvm-12/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -fno-split-dwarf-inlining -debugger-tuning=gdb -v -resource-dir /usr/lib/llvm-12/lib/clang/12.0.0 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-12/lib/clang/12.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /home/julesimf/source/MIPT/formallangs/practask/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -o CMakeFiles/cmTC_50781.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [clang -cc1 version 12.0.0 based upon LLVM 12.0.0 default target x86_64-pc-linux-gnu]
   ignore line: [ignoring nonexistent directory "/include"]
   ignore line: [ignoring duplicate directory "/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10"]
@@ -126,7 +126,7 @@ Parsed CXX implicit link information from above output:
   ignore line: [ /usr/include/x86_64-linux-gnu]
   ignore line: [ /usr/include]
   ignore line: [End of search list.]
-  ignore line: [[2/2] Linking CXX executable cmTC_0d5e4]
+  ignore line: [[2/2] Linking CXX executable cmTC_50781]
   ignore line: [Ubuntu clang version 12.0.0-3ubuntu1~20.04.4]
   ignore line: [Target: x86_64-pc-linux-gnu]
   ignore line: [Thread model: posix]
@@ -142,7 +142,7 @@ Parsed CXX implicit link information from above output:
   ignore line: [@m64]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  link line: [ "/bin/ld" --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0d5e4 /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /bin/../lib/gcc/x86_64-linux-gnu/10/crtbegin.o -L/bin/../lib/gcc/x86_64-linux-gnu/10 -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/x86_64-linux-gnu/../../lib64 -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../.. -L/usr/lib/llvm-12/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_0d5e4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /bin/../lib/gcc/x86_64-linux-gnu/10/crtend.o /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
+  link line: [ "/bin/ld" --hash-style=both --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_50781 /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /bin/../lib/gcc/x86_64-linux-gnu/10/crtbegin.o -L/bin/../lib/gcc/x86_64-linux-gnu/10 -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/usr/lib/x86_64-linux-gnu/../../lib64 -L/bin/../lib/gcc/x86_64-linux-gnu/10/../../.. -L/usr/lib/llvm-12/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_50781.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /bin/../lib/gcc/x86_64-linux-gnu/10/crtend.o /bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
     arg [/bin/ld] ==> ignore
     arg [--hash-style=both] ==> ignore
     arg [--build-id] ==> ignore
@@ -152,7 +152,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_0d5e4] ==> ignore
+    arg [cmTC_50781] ==> ignore
     arg [/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/bin/../lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/bin/../lib/gcc/x86_64-linux-gnu/10/crtbegin.o] ==> ignore
@@ -168,7 +168,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/llvm-12/bin/../lib] ==> dir [/usr/lib/llvm-12/bin/../lib]
     arg [-L/lib] ==> dir [/lib]
     arg [-L/usr/lib] ==> dir [/usr/lib]
-    arg [CMakeFiles/cmTC_0d5e4.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_50781.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -198,16 +198,16 @@ Parsed CXX implicit link information from above output:
 Determining if the include file pthread.h exists passed with the following output:
 Change Dir: /home/julesimf/source/MIPT/formallangs/practask/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_236cb && [1/2] Building CXX object CMakeFiles/cmTC_236cb.dir/CheckIncludeFile.cxx.o
-[2/2] Linking CXX executable cmTC_236cb
+Run Build Command(s):/usr/bin/ninja cmTC_79e95 && [1/2] Building CXX object CMakeFiles/cmTC_79e95.dir/CheckIncludeFile.cxx.o
+[2/2] Linking CXX executable cmTC_79e95
 
 
 
 Determining if the function pthread_create exists in the pthread passed with the following output:
 Change Dir: /home/julesimf/source/MIPT/formallangs/practask/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_9a37f && [1/2] Building CXX object CMakeFiles/cmTC_9a37f.dir/CheckFunctionExists.cxx.o
-[2/2] Linking CXX executable cmTC_9a37f
+Run Build Command(s):/usr/bin/ninja cmTC_15640 && [1/2] Building CXX object CMakeFiles/cmTC_15640.dir/CheckFunctionExists.cxx.o
+[2/2] Linking CXX executable cmTC_15640
 
 
 

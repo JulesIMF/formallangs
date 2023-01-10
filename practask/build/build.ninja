@@ -61,44 +61,16 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_test: phony || CMakeFiles/test.dir
 
-build CMakeFiles/test.dir/src/Automaton.cpp.o: CXX_COMPILER__test ../src/Automaton.cpp || cmake_object_order_depends_target_test
-  DEP_FILE = CMakeFiles/test.dir/src/Automaton.cpp.o.d
-  FLAGS = -O0    -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17
-  INCLUDES = -I../includes
-  OBJECT_DIR = CMakeFiles/test.dir
-  OBJECT_FILE_DIR = CMakeFiles/test.dir/src
-
-build CMakeFiles/test.dir/src/Regexp.cpp.o: CXX_COMPILER__test ../src/Regexp.cpp || cmake_object_order_depends_target_test
-  DEP_FILE = CMakeFiles/test.dir/src/Regexp.cpp.o.d
-  FLAGS = -O0    -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17
-  INCLUDES = -I../includes
-  OBJECT_DIR = CMakeFiles/test.dir
-  OBJECT_FILE_DIR = CMakeFiles/test.dir/src
-
-build CMakeFiles/test.dir/src/Optimize.cpp.o: CXX_COMPILER__test ../src/Optimize.cpp || cmake_object_order_depends_target_test
-  DEP_FILE = CMakeFiles/test.dir/src/Optimize.cpp.o.d
-  FLAGS = -O0    -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17
-  INCLUDES = -I../includes
-  OBJECT_DIR = CMakeFiles/test.dir
-  OBJECT_FILE_DIR = CMakeFiles/test.dir/src
-
-build CMakeFiles/test.dir/src/Task.cpp.o: CXX_COMPILER__test ../src/Task.cpp || cmake_object_order_depends_target_test
-  DEP_FILE = CMakeFiles/test.dir/src/Task.cpp.o.d
-  FLAGS = -O0    -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17
-  INCLUDES = -I../includes
-  OBJECT_DIR = CMakeFiles/test.dir
-  OBJECT_FILE_DIR = CMakeFiles/test.dir/src
-
 build CMakeFiles/test.dir/tests/main.cpp.o: CXX_COMPILER__test ../tests/main.cpp || cmake_object_order_depends_target_test
   DEP_FILE = CMakeFiles/test.dir/tests/main.cpp.o.d
-  FLAGS = -O0    -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17
+  FLAGS = -O0  -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17
   INCLUDES = -I../includes
   OBJECT_DIR = CMakeFiles/test.dir
   OBJECT_FILE_DIR = CMakeFiles/test.dir/tests
 
 build CMakeFiles/test.dir/tests/tests.cpp.o: CXX_COMPILER__test ../tests/tests.cpp || cmake_object_order_depends_target_test
   DEP_FILE = CMakeFiles/test.dir/tests/tests.cpp.o.d
-  FLAGS = -O0    -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17
+  FLAGS = -O0  -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17
   INCLUDES = -I../includes
   OBJECT_DIR = CMakeFiles/test.dir
   OBJECT_FILE_DIR = CMakeFiles/test.dir/tests
@@ -111,8 +83,8 @@ build CMakeFiles/test.dir/tests/tests.cpp.o: CXX_COMPILER__test ../tests/tests.c
 #############################################
 # Link the executable bin/test
 
-build bin/test: CXX_EXECUTABLE_LINKER__test CMakeFiles/test.dir/src/Automaton.cpp.o CMakeFiles/test.dir/src/Regexp.cpp.o CMakeFiles/test.dir/src/Optimize.cpp.o CMakeFiles/test.dir/src/Task.cpp.o CMakeFiles/test.dir/tests/main.cpp.o CMakeFiles/test.dir/tests/tests.cpp.o
-  FLAGS = -O0    -g -fprofile-instr-generate -fcoverage-mapping -g
+build bin/test: CXX_EXECUTABLE_LINKER__test CMakeFiles/test.dir/tests/main.cpp.o CMakeFiles/test.dir/tests/tests.cpp.o
+  FLAGS = -O0  -g -fprofile-instr-generate -fcoverage-mapping -g
   LINK_LIBRARIES = -lgtest_main  -lgtest  -lpthread
   OBJECT_DIR = CMakeFiles/test.dir
   POST_BUILD = :
@@ -121,69 +93,41 @@ build bin/test: CXX_EXECUTABLE_LINKER__test CMakeFiles/test.dir/src/Automaton.cp
   TARGET_PDB = test.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target regsolver
+# Object build statements for EXECUTABLE target earley
 
 
 #############################################
-# Order-only phony target for regsolver
+# Order-only phony target for earley
 
-build cmake_object_order_depends_target_regsolver: phony || CMakeFiles/regsolver.dir
+build cmake_object_order_depends_target_earley: phony || CMakeFiles/earley.dir
 
-build CMakeFiles/regsolver.dir/src/Main.cpp.o: CXX_COMPILER__regsolver ../src/Main.cpp || cmake_object_order_depends_target_regsolver
-  DEP_FILE = CMakeFiles/regsolver.dir/src/Main.cpp.o.d
-  FLAGS = -O0    -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17
+build CMakeFiles/earley.dir/src/earley/main.cpp.o: CXX_COMPILER__earley ../src/earley/main.cpp || cmake_object_order_depends_target_earley
+  DEP_FILE = CMakeFiles/earley.dir/src/earley/main.cpp.o.d
+  FLAGS = -O0  -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17
   INCLUDES = -I../includes
-  OBJECT_DIR = CMakeFiles/regsolver.dir
-  OBJECT_FILE_DIR = CMakeFiles/regsolver.dir/src
-
-build CMakeFiles/regsolver.dir/src/Automaton.cpp.o: CXX_COMPILER__regsolver ../src/Automaton.cpp || cmake_object_order_depends_target_regsolver
-  DEP_FILE = CMakeFiles/regsolver.dir/src/Automaton.cpp.o.d
-  FLAGS = -O0    -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17
-  INCLUDES = -I../includes
-  OBJECT_DIR = CMakeFiles/regsolver.dir
-  OBJECT_FILE_DIR = CMakeFiles/regsolver.dir/src
-
-build CMakeFiles/regsolver.dir/src/Regexp.cpp.o: CXX_COMPILER__regsolver ../src/Regexp.cpp || cmake_object_order_depends_target_regsolver
-  DEP_FILE = CMakeFiles/regsolver.dir/src/Regexp.cpp.o.d
-  FLAGS = -O0    -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17
-  INCLUDES = -I../includes
-  OBJECT_DIR = CMakeFiles/regsolver.dir
-  OBJECT_FILE_DIR = CMakeFiles/regsolver.dir/src
-
-build CMakeFiles/regsolver.dir/src/Optimize.cpp.o: CXX_COMPILER__regsolver ../src/Optimize.cpp || cmake_object_order_depends_target_regsolver
-  DEP_FILE = CMakeFiles/regsolver.dir/src/Optimize.cpp.o.d
-  FLAGS = -O0    -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17
-  INCLUDES = -I../includes
-  OBJECT_DIR = CMakeFiles/regsolver.dir
-  OBJECT_FILE_DIR = CMakeFiles/regsolver.dir/src
-
-build CMakeFiles/regsolver.dir/src/Task.cpp.o: CXX_COMPILER__regsolver ../src/Task.cpp || cmake_object_order_depends_target_regsolver
-  DEP_FILE = CMakeFiles/regsolver.dir/src/Task.cpp.o.d
-  FLAGS = -O0    -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17
-  INCLUDES = -I../includes
-  OBJECT_DIR = CMakeFiles/regsolver.dir
-  OBJECT_FILE_DIR = CMakeFiles/regsolver.dir/src
+  OBJECT_DIR = CMakeFiles/earley.dir
+  OBJECT_FILE_DIR = CMakeFiles/earley.dir/src/earley
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target regsolver
+# Link build statements for EXECUTABLE target earley
 
 
 #############################################
-# Link the executable bin/regsolver
+# Link the executable bin/earley
 
-build bin/regsolver: CXX_EXECUTABLE_LINKER__regsolver CMakeFiles/regsolver.dir/src/Main.cpp.o CMakeFiles/regsolver.dir/src/Automaton.cpp.o CMakeFiles/regsolver.dir/src/Regexp.cpp.o CMakeFiles/regsolver.dir/src/Optimize.cpp.o CMakeFiles/regsolver.dir/src/Task.cpp.o
-  FLAGS = -O0    -g -fprofile-instr-generate -fcoverage-mapping -g
-  OBJECT_DIR = CMakeFiles/regsolver.dir
+build bin/earley: CXX_EXECUTABLE_LINKER__earley CMakeFiles/earley.dir/src/earley/main.cpp.o
+  FLAGS = -O0  -g -fprofile-instr-generate -fcoverage-mapping -g
+  OBJECT_DIR = CMakeFiles/earley.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = bin/regsolver
-  TARGET_PDB = regsolver.dbg
+  TARGET_FILE = bin/earley
+  TARGET_PDB = earley.dbg
 
 # =============================================================================
 # Target aliases.
 
-build regsolver: phony bin/regsolver
+build earley: phony bin/earley
 
 build test: phony bin/test
 
@@ -195,7 +139,7 @@ build test: phony bin/test
 #############################################
 # Folder: /home/julesimf/source/MIPT/formallangs/practask/build
 
-build all: phony bin/test bin/regsolver
+build all: phony bin/test bin/earley
 
 # =============================================================================
 # Built-in targets

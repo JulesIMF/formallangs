@@ -39,7 +39,7 @@ else()
     set(ASAN "")
 endif()
 
-set(CMAKE_CXX_FLAGS "${OPT} ${WARNING_FLAGS} ${ASAN} ${NOELIDE} -g -fprofile-instr-generate -fcoverage-mapping")
+set(CMAKE_CXX_FLAGS "${OPT} ${WARNING_FLAGS} -g -fprofile-instr-generate -fcoverage-mapping")
 	
 #
 # Building
@@ -50,21 +50,20 @@ find_package(Threads REQUIRED)
 
 include_directories(includes)
 
-add_executable(regsolver
-        src/Main.cpp
-        src/Automaton.cpp
-        src/Regexp.cpp
-        src/Optimize.cpp
-        src/Task.cpp
+# Earley
+
+add_executable(earley
+    src/earley/main.cpp
 )
 
-target_link_libraries(regsolver)
+target_link_libraries(earley)
+
+# LR
+
+# Test
 
 add_executable(test
-        src/Automaton.cpp
-        src/Regexp.cpp
-        src/Optimize.cpp
-        src/Task.cpp
+        
         tests/main.cpp
         tests/tests.cpp
 )
