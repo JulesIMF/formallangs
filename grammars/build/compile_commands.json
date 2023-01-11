@@ -1,0 +1,49 @@
+[
+{
+  "directory": "/home/julesimf/source/MIPT/formallangs/practask/build",
+  "command": "/usr/bin/clang++   -I../includes  -O0  -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17 -o CMakeFiles/test.dir/src/grammars.cpp.o -c /home/julesimf/source/MIPT/formallangs/practask/src/grammars.cpp",
+  "file": "/home/julesimf/source/MIPT/formallangs/practask/src/grammars.cpp"
+},
+
+{
+  "directory": "/home/julesimf/source/MIPT/formallangs/practask/build",
+  "command": "/usr/bin/clang++   -I../includes  -O0  -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17 -o CMakeFiles/test.dir/src/earley/earley.cpp.o -c /home/julesimf/source/MIPT/formallangs/practask/src/earley/earley.cpp",
+  "file": "/home/julesimf/source/MIPT/formallangs/practask/src/earley/earley.cpp"
+},
+
+{
+  "directory": "/home/julesimf/source/MIPT/formallangs/practask/build",
+  "command": "/usr/bin/clang++   -I../includes  -O0  -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17 -o CMakeFiles/test.dir/tests/main.cpp.o -c /home/julesimf/source/MIPT/formallangs/practask/tests/main.cpp",
+  "file": "/home/julesimf/source/MIPT/formallangs/practask/tests/main.cpp"
+},
+
+{
+  "directory": "/home/julesimf/source/MIPT/formallangs/practask/build",
+  "command": "/usr/bin/clang++   -I../includes  -O0  -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17 -o CMakeFiles/test.dir/tests/grammar.cpp.o -c /home/julesimf/source/MIPT/formallangs/practask/tests/grammar.cpp",
+  "file": "/home/julesimf/source/MIPT/formallangs/practask/tests/grammar.cpp"
+},
+
+{
+  "directory": "/home/julesimf/source/MIPT/formallangs/practask/build",
+  "command": "/usr/bin/clang++   -I../includes  -O0  -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17 -o CMakeFiles/test.dir/tests/earley.cpp.o -c /home/julesimf/source/MIPT/formallangs/practask/tests/earley.cpp",
+  "file": "/home/julesimf/source/MIPT/formallangs/practask/tests/earley.cpp"
+},
+
+{
+  "directory": "/home/julesimf/source/MIPT/formallangs/practask/build",
+  "command": "/usr/bin/clang++   -I../includes  -O0  -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17 -o CMakeFiles/earley.dir/src/grammars.cpp.o -c /home/julesimf/source/MIPT/formallangs/practask/src/grammars.cpp",
+  "file": "/home/julesimf/source/MIPT/formallangs/practask/src/grammars.cpp"
+},
+
+{
+  "directory": "/home/julesimf/source/MIPT/formallangs/practask/build",
+  "command": "/usr/bin/clang++   -I../includes  -O0  -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17 -o CMakeFiles/earley.dir/src/earley/main.cpp.o -c /home/julesimf/source/MIPT/formallangs/practask/src/earley/main.cpp",
+  "file": "/home/julesimf/source/MIPT/formallangs/practask/src/earley/main.cpp"
+},
+
+{
+  "directory": "/home/julesimf/source/MIPT/formallangs/practask/build",
+  "command": "/usr/bin/clang++   -I../includes  -O0  -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17 -o CMakeFiles/earley.dir/src/earley/earley.cpp.o -c /home/julesimf/source/MIPT/formallangs/practask/src/earley/earley.cpp",
+  "file": "/home/julesimf/source/MIPT/formallangs/practask/src/earley/earley.cpp"
+}
+]

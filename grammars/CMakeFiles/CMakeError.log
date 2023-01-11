@@ -1,0 +1,17 @@
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: /home/julesimf/source/MIPT/formallangs/practask/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_31d30/fast && make[1]: Entering directory '/home/julesimf/source/MIPT/formallangs/practask/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_31d30.dir/build.make CMakeFiles/cmTC_31d30.dir/build
+make[2]: Entering directory '/home/julesimf/source/MIPT/formallangs/practask/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_31d30.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -O0  -g -fprofile-instr-generate -fcoverage-mapping    -std=gnu++17 -o CMakeFiles/cmTC_31d30.dir/CheckIncludeFile.cxx.o -c /home/julesimf/source/MIPT/formallangs/practask/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+c++: error: unrecognized command line option ‘-fprofile-instr-generate’; did you mean ‘-fprofile-generate’?
+c++: error: unrecognized command line option ‘-fcoverage-mapping’
+make[2]: *** [CMakeFiles/cmTC_31d30.dir/build.make:66: CMakeFiles/cmTC_31d30.dir/CheckIncludeFile.cxx.o] Error 1
+make[2]: Leaving directory '/home/julesimf/source/MIPT/formallangs/practask/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:121: cmTC_31d30/fast] Error 2
+make[1]: Leaving directory '/home/julesimf/source/MIPT/formallangs/practask/CMakeFiles/CMakeTmp'
+
+
+
