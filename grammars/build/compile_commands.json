@@ -1,0 +1,79 @@
+[
+{
+  "directory": "/home/julesimf/source/MIPT/formallangs/grammars/build",
+  "command": "/usr/bin/clang++  -DNDEBUG -I../includes  -O0  -fsanitize=address -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17 -o CMakeFiles/test.dir/src/grammars.cpp.o -c /home/julesimf/source/MIPT/formallangs/grammars/src/grammars.cpp",
+  "file": "/home/julesimf/source/MIPT/formallangs/grammars/src/grammars.cpp"
+},
+
+{
+  "directory": "/home/julesimf/source/MIPT/formallangs/grammars/build",
+  "command": "/usr/bin/clang++  -DNDEBUG -I../includes  -O0  -fsanitize=address -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17 -o CMakeFiles/test.dir/src/parsing/earley.cpp.o -c /home/julesimf/source/MIPT/formallangs/grammars/src/parsing/earley.cpp",
+  "file": "/home/julesimf/source/MIPT/formallangs/grammars/src/parsing/earley.cpp"
+},
+
+{
+  "directory": "/home/julesimf/source/MIPT/formallangs/grammars/build",
+  "command": "/usr/bin/clang++  -DNDEBUG -I../includes  -O0  -fsanitize=address -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17 -o CMakeFiles/test.dir/src/parsing/lr.cpp.o -c /home/julesimf/source/MIPT/formallangs/grammars/src/parsing/lr.cpp",
+  "file": "/home/julesimf/source/MIPT/formallangs/grammars/src/parsing/lr.cpp"
+},
+
+{
+  "directory": "/home/julesimf/source/MIPT/formallangs/grammars/build",
+  "command": "/usr/bin/clang++  -DNDEBUG -I../includes  -O0  -fsanitize=address -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17 -o CMakeFiles/test.dir/tests/main.cpp.o -c /home/julesimf/source/MIPT/formallangs/grammars/tests/main.cpp",
+  "file": "/home/julesimf/source/MIPT/formallangs/grammars/tests/main.cpp"
+},
+
+{
+  "directory": "/home/julesimf/source/MIPT/formallangs/grammars/build",
+  "command": "/usr/bin/clang++  -DNDEBUG -I../includes  -O0  -fsanitize=address -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17 -o CMakeFiles/test.dir/tests/grammar.cpp.o -c /home/julesimf/source/MIPT/formallangs/grammars/tests/grammar.cpp",
+  "file": "/home/julesimf/source/MIPT/formallangs/grammars/tests/grammar.cpp"
+},
+
+{
+  "directory": "/home/julesimf/source/MIPT/formallangs/grammars/build",
+  "command": "/usr/bin/clang++  -DNDEBUG -I../includes  -O0  -fsanitize=address -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17 -o CMakeFiles/test.dir/tests/earley.cpp.o -c /home/julesimf/source/MIPT/formallangs/grammars/tests/earley.cpp",
+  "file": "/home/julesimf/source/MIPT/formallangs/grammars/tests/earley.cpp"
+},
+
+{
+  "directory": "/home/julesimf/source/MIPT/formallangs/grammars/build",
+  "command": "/usr/bin/clang++  -DNDEBUG -I../includes  -O0  -fsanitize=address -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17 -o CMakeFiles/test.dir/tests/lr.cpp.o -c /home/julesimf/source/MIPT/formallangs/grammars/tests/lr.cpp",
+  "file": "/home/julesimf/source/MIPT/formallangs/grammars/tests/lr.cpp"
+},
+
+{
+  "directory": "/home/julesimf/source/MIPT/formallangs/grammars/build",
+  "command": "/usr/bin/clang++  -DNDEBUG -I../includes  -O0  -fsanitize=address -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17 -o CMakeFiles/lr.dir/src/grammars.cpp.o -c /home/julesimf/source/MIPT/formallangs/grammars/src/grammars.cpp",
+  "file": "/home/julesimf/source/MIPT/formallangs/grammars/src/grammars.cpp"
+},
+
+{
+  "directory": "/home/julesimf/source/MIPT/formallangs/grammars/build",
+  "command": "/usr/bin/clang++  -DNDEBUG -I../includes  -O0  -fsanitize=address -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17 -o CMakeFiles/lr.dir/src/main_lr.cpp.o -c /home/julesimf/source/MIPT/formallangs/grammars/src/main_lr.cpp",
+  "file": "/home/julesimf/source/MIPT/formallangs/grammars/src/main_lr.cpp"
+},
+
+{
+  "directory": "/home/julesimf/source/MIPT/formallangs/grammars/build",
+  "command": "/usr/bin/clang++  -DNDEBUG -I../includes  -O0  -fsanitize=address -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17 -o CMakeFiles/lr.dir/src/parsing/lr.cpp.o -c /home/julesimf/source/MIPT/formallangs/grammars/src/parsing/lr.cpp",
+  "file": "/home/julesimf/source/MIPT/formallangs/grammars/src/parsing/lr.cpp"
+},
+
+{
+  "directory": "/home/julesimf/source/MIPT/formallangs/grammars/build",
+  "command": "/usr/bin/clang++  -DNDEBUG -I../includes  -O0  -fsanitize=address -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17 -o CMakeFiles/earley.dir/src/grammars.cpp.o -c /home/julesimf/source/MIPT/formallangs/grammars/src/grammars.cpp",
+  "file": "/home/julesimf/source/MIPT/formallangs/grammars/src/grammars.cpp"
+},
+
+{
+  "directory": "/home/julesimf/source/MIPT/formallangs/grammars/build",
+  "command": "/usr/bin/clang++  -DNDEBUG -I../includes  -O0  -fsanitize=address -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17 -o CMakeFiles/earley.dir/src/main_earley.cpp.o -c /home/julesimf/source/MIPT/formallangs/grammars/src/main_earley.cpp",
+  "file": "/home/julesimf/source/MIPT/formallangs/grammars/src/main_earley.cpp"
+},
+
+{
+  "directory": "/home/julesimf/source/MIPT/formallangs/grammars/build",
+  "command": "/usr/bin/clang++  -DNDEBUG -I../includes  -O0  -fsanitize=address -g -fprofile-instr-generate -fcoverage-mapping -g   -std=gnu++17 -o CMakeFiles/earley.dir/src/parsing/earley.cpp.o -c /home/julesimf/source/MIPT/formallangs/grammars/src/parsing/earley.cpp",
+  "file": "/home/julesimf/source/MIPT/formallangs/grammars/src/parsing/earley.cpp"
+}
+]

@@ -1,1 +1,0 @@
-/usr/bin/clang++  -O0    -g -fprofile-instr-generate -fcoverage-mapping   CMakeFiles/test.dir/src/Automaton.cpp.o CMakeFiles/test.dir/src/Regexp.cpp.o CMakeFiles/test.dir/src/Optimize.cpp.o CMakeFiles/test.dir/src/Task.cpp.o CMakeFiles/test.dir/tests/main.cpp.o CMakeFiles/test.dir/tests/tests.cpp.o  -o bin/test  -lgtest_main -lgtest -lpthread 
