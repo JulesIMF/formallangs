@@ -54,8 +54,8 @@ include_directories(includes)
 
 add_executable(earley
     src/grammars.cpp
-    src/earley/main.cpp
-    src/earley/earley.cpp
+    src/main_earley.cpp
+    src/parsing/earley.cpp
 )
 
 target_link_libraries(earley)
@@ -66,7 +66,7 @@ target_link_libraries(earley)
 
 add_executable(test
         src/grammars.cpp
-        src/earley/earley.cpp
+        src/parsing/earley.cpp
         tests/main.cpp
         tests/grammar.cpp
         tests/earley.cpp

@@ -25,7 +25,7 @@ Revision History:
 
 #include "tests.h"
 #include <grammars.h>
-#include <earley/earley.h>
+#include <parsing/earley.h>
 
 //
 // Definitions

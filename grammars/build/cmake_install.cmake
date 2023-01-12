@@ -1,4 +1,4 @@
-# Install script for directory: /home/julesimf/source/MIPT/formallangs/practask
+# Install script for directory: /home/julesimf/source/MIPT/formallangs/grammars
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/julesimf/source/MIPT/formallangs/practask/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/julesimf/source/MIPT/formallangs/grammars/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
