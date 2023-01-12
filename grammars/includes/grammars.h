@@ -38,9 +38,10 @@ Revision History:
 
 namespace Grammars
 {
-    using Terminal = char;
-    using Nonterminal = char;
     using String = std::string;
+    using SymbolType = String::value_type;
+    using Terminal = SymbolType;
+    using Nonterminal = SymbolType;
     Nonterminal const Eps = '#';
 
     template<class T>
@@ -56,6 +57,7 @@ namespace Grammars
     {
         Nonterminal Head;
         String Body;
+        size_t Id = 0;
         bool operator==(Rule const& other) const = default;
     };
 
@@ -84,9 +86,22 @@ namespace Grammars
     public:
         Set<Terminal> const& Alphabet() const { return Alphabet_; }
         Set<Nonterminal> const& Nonterminals() const { return Nonterminals_; }
+        Set<SymbolType> AllSymbols() const
+        {
+            Set<SymbolType> all = Alphabet_;
+            all.insert(Nonterminals_.begin(), Nonterminals_.end());
+            return all;
+        }
+
+        Map<Nonterminal, Vector<Rule>>& Rules() { return Rules_; }
+        Vector<Rule>& RulesFrom(Nonterminal N) { return Rules_.at(N); }
+
         Map<Nonterminal, Vector<Rule>> const& Rules() const { return Rules_; }
         Vector<Rule> const& RulesFrom(Nonterminal N) const { return Rules_.at(N); }
         Nonterminal Start() const { return Start_; }
+
+        bool IsTerminal(SymbolType Symbol) const { return Alphabet().find(Symbol) != Alphabet().end(); }
+        bool IsNonterminal(SymbolType Symbol) const { return Nonterminals().find(Symbol) != Nonterminals().end(); }
 
         Grammar(
             Set<Terminal> const& Alphabet,
@@ -107,6 +122,36 @@ namespace Grammars
 
             if (Nonterminals_.find(Start) == Nonterminals_.end())
                 throw std::logic_error("Grammar error: Start not in nonterminals set");
+        }
+
+        void AddTerminal(Terminal NewTerminal)
+        {
+            for (auto const& n : Nonterminals())
+            {
+                if (n == NewTerminal)
+                    throw std::logic_error("Grammar error: Alphabet and Nonterminals intersect");
+            }
+
+            Alphabet_.insert(NewTerminal);
+        }
+
+        void AddNonterminal(Nonterminal NewNonterminal)
+        {
+            for (auto const& a : Alphabet())
+            {
+                if (a == NewNonterminal)
+                    throw std::logic_error("Grammar error: Alphabet and Nonterminals intersect");
+            }
+
+            Nonterminals_.insert(NewNonterminal);
+        }
+
+        void SetStart(Nonterminal NewStart)
+        {
+            if (Nonterminals_.find(NewStart) == Nonterminals_.end())
+                throw std::logic_error("Grammar error: New start not in nonterminals set");
+
+            Start_ = NewStart;
         }
 
         Rule const& AddRule(Rule NewRule)

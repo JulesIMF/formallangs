@@ -28,10 +28,10 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY bin)
 # Definitions
 #
 
-# add_definitions(NDEBUG)
+add_definitions(-DNDEBUG)
 
 set(OPT "-O0")
-set(SANITIZE 0)
+set(SANITIZE 1)
 
 if(SANITIZE)
     set(ASAN "-fsanitize=address")
@@ -39,7 +39,7 @@ else()
     set(ASAN "")
 endif()
 
-set(CMAKE_CXX_FLAGS "${OPT} ${WARNING_FLAGS} -g -fprofile-instr-generate -fcoverage-mapping")
+set(CMAKE_CXX_FLAGS "${OPT} ${WARNING_FLAGS} ${ASAN} -g -fprofile-instr-generate -fcoverage-mapping")
 	
 #
 # Building
@@ -62,14 +62,24 @@ target_link_libraries(earley)
 
 # LR
 
+add_executable(lr
+    src/grammars.cpp
+    src/main_lr.cpp
+    src/parsing/lr.cpp
+)
+
+target_link_libraries(lr)
+
 # Test
 
 add_executable(test
         src/grammars.cpp
         src/parsing/earley.cpp
+        src/parsing/lr.cpp
         tests/main.cpp
         tests/grammar.cpp
         tests/earley.cpp
+        tests/lr.cpp
 )
 
 target_link_libraries(test gtest_main gtest pthread)

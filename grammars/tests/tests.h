@@ -49,6 +49,18 @@ class TestEarley : public ::testing::Test
     ~TestEarley();
 };
 
+class TestLR: public ::testing::Test
+{
+    TestLR();
+    ~TestLR();
+};
+
+class TestLRComponents: public ::testing::Test
+{
+    TestLRComponents();
+    ~TestLRComponents();
+};
+
 class TestDebug : public ::testing::Test
 {
 };

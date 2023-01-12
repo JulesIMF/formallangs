@@ -8,7 +8,7 @@
             "name": "g++ - Сборка и отладка активного файла",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/bin/earley",
+            "program": "${workspaceFolder}/build/bin/lr",
             "args": [
                 "${workspaceFolder}/grammar_brackets",
                 "()"

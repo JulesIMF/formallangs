@@ -1,4 +1,5 @@
-/home/julesimf/source/MIPT/formallangs/grammars/build/CMakeFiles/rebuild_cache.dir
 /home/julesimf/source/MIPT/formallangs/grammars/build/CMakeFiles/edit_cache.dir
 /home/julesimf/source/MIPT/formallangs/grammars/build/CMakeFiles/test.dir
+/home/julesimf/source/MIPT/formallangs/grammars/build/CMakeFiles/rebuild_cache.dir
+/home/julesimf/source/MIPT/formallangs/grammars/build/CMakeFiles/lr.dir
 /home/julesimf/source/MIPT/formallangs/grammars/build/CMakeFiles/earley.dir
